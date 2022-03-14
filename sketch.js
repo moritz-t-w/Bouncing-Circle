@@ -1,4 +1,4 @@
-let x, y
+let x, y, direction
 
 function setup() {
     createCanvas(600, 400);
@@ -8,6 +8,7 @@ function setup() {
     fill("#000")
     x = 600 / 2
     y = 400 / 2
+    direction = "right"
 }
 
 function draw() {

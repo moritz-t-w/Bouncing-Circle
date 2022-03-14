@@ -20,6 +20,15 @@ function draw() {
     stroke("#fff")
     strokeWeight(weight)
     fill("#000")
+    switch (direction) {
+        case true: //right
+            x += 2
+            break;
+
+        case false: //left
+            x -= 2
+            break;
+    }
     if (x == 0 + d / 2 + weight) {
         direction = !direction
     }
@@ -27,13 +36,5 @@ function draw() {
         direction = !direction
     }
 
-    switch (direction) {
-        case true: //right
-            circle(x += 2, y, d)
-            break;
-
-        case false: //left
-            circle(x -= 2, y, d)
-            break;
-    }
+    circle(x, y, d)
 }

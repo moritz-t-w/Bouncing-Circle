@@ -23,4 +23,14 @@ function draw() {
     if (x == 600) {
         direction = !direction
     }
+
+    switch (direction) {
+        case true: //right
+            circle(x++, y, 100)
+            break;
+
+        case false: //left
+            circle(x--, y, 100)
+            break;
+    }
 }

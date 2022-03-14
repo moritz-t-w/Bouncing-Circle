@@ -29,11 +29,11 @@ function draw() {
 
     switch (direction) {
         case true: //right
-            circle(x++, y, d)
+            circle(x += 2, y, d)
             break;
 
         case false: //left
-            circle(x--, y, d)
+            circle(x -= 2, y, d)
             break;
     }
 }

@@ -17,5 +17,10 @@ function setup() {
 }
 
 function draw() {
-
+    if (x == 0) {
+        direction = !direction
+    }
+    if (x == 600) {
+        direction = !direction
+    }
 }
